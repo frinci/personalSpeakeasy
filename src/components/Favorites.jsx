@@ -1,5 +1,6 @@
 import React from 'react'
 import { api } from "../services/MockApiConfig"
+import "./styles/Favorites.css"
 
 class Favorites extends React.Component {
     constructor() {
@@ -16,10 +17,12 @@ class Favorites extends React.Component {
     fetchCocktails = async () => {
         try {
             const cocktails = await api.get("/cocktails")
-            this.setState(state => ({ 
-                cocktails: [...state.cocktails, cocktails.data] 
+            
+            this.setState(({ 
+                cocktails: cocktails.data[0].cocktails
             }))
-            console.log(cocktails)
+         
+            console.log("This is cocktails' data :", cocktails.data[0].cocktails)
         }
         catch (error) {
             console.error(error)
@@ -28,14 +31,15 @@ class Favorites extends React.Component {
 
     render() {
         const COCKTAILS = this.state.cocktails.map((cocktail, index) => (
-            <React.Fragment key={index}>
-                <div>{cocktail.image}</div>
+            <div key={index}>
+                <img className="favoriteImage" src={cocktail.image}/>
                 <h3>{cocktail.title}</h3>
-            </React.Fragment>
+            </div>
         ))
+        console.log(this.state.cocktails)
         return (
             <div>
-                
+
                 <div className="Hero">
                     <div className="favoritesTitleBox">
                         <h1>Favorite Recipes</h1>
@@ -45,7 +49,7 @@ class Favorites extends React.Component {
                 <div className="favoriteDivider"></div>
 
                 <div className="favoritesCardBox">
-                    {COCKTAILS}
+                    {COCKTAILS} 
                 </div>
 
             </div>
