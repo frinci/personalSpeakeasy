@@ -8,16 +8,16 @@ const Header = () => {
                 
             </div>
             <nav className="navBar">
-                <NavLink exact activeClassname="active" to="/Home">
+                <NavLink exact activeclassname="active" to="/Home">
                     Home
                     </NavLink>
-                <NavLink exact activeClassname="active" to="/Search">
+                <NavLink exact activeclassname="active" to="/Search">
                     Search
                     </NavLink>
-                <NavLink exact activeClassname="active" to="/Create">
+                <NavLink exact activeclassname="active" to="/Create">
                     Create
                 </NavLink>
-                <NavLink exact activeClassname="active" to="/Favorites">
+                <NavLink exact activeclassname="active" to="/Favorites">
                     Favorites
                 </NavLink>
             </nav>

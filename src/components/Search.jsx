@@ -1,4 +1,5 @@
 import React from 'react'
+import {api} from '../services/ThirdPartyApiConfig'
 
 class Search extends React.Component {
     constructor() {
@@ -8,12 +9,27 @@ class Search extends React.Component {
         }
     }
 
-    handleInput = () => {
+    // handleInput = () => {
 
+    // }
+
+    // handleClick = () => {
+
+    // }
+
+    componentDidMount() {
+        this.fetchCocktailApi()
     }
 
-    handleClick = () => {
-
+    fetchCocktailApi = async () => {
+        try {
+            const cocktail = await api.get("cocktail")
+            this.setState({cocktail: cocktail.data})
+            // console.log(cocktail)
+        }
+        catch(error) {
+            console.error(error)
+        }
     }
 
     render() {

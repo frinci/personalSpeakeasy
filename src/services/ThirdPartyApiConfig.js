@@ -1,6 +1,6 @@
 import Axios from 'axios'
-const BASE_API_URL = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=cocktail`
+const BASE_URL = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=`
 
 export const api = Axios.create({
-    baseApiURL: BASE_API_URL
+    baseURL: BASE_URL
 })
