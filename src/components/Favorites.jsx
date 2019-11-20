@@ -22,7 +22,7 @@ class Favorites extends React.Component {
                 cocktails: cocktails.data[0].cocktails
             }))
          
-            console.log("This is cocktails' data :", cocktails.data[0].cocktails)
+            // console.log("This is cocktails' data :", cocktails.data[0].cocktails)
         }
         catch (error) {
             console.error(error)
@@ -36,7 +36,7 @@ class Favorites extends React.Component {
                 <h3>{cocktail.title}</h3>
             </div>
         ))
-        console.log(this.state.cocktails)
+        // console.log(this.state.cocktails)
         return (
             <div>
 

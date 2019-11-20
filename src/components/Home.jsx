@@ -4,6 +4,8 @@ import Header from "./Header"
 import Search from "./Search"
 import Create from "./Create"
 import Favorites from "./Favorites"
+import Overlay from "./Overlay"
+
 
 const Home = () => {
 
@@ -27,10 +29,12 @@ const Home = () => {
                     <Route exact path="/Search" component={Search} />
                     <Route exact path="/Create" component={Create} />
                     <Route exact path="/Favorites" component={Favorites} />
+                    <Route exact path="/Overlay" component={Overlay} />
                 </Switch>
-                <Search />
-                <Create />
-                <Favorites />
+                
+                <Search/>
+                <Create/>
+                <Favorites/>
             </main>
         </div>
     )

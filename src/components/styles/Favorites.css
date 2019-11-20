@@ -1,3 +1,10 @@
 .favoriteImage {
     max-height: 200px;
+    margin: 20px;
+}
+
+.favoritesCardBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
 }

@@ -25,7 +25,7 @@ class Search extends React.Component {
         try {
             const cocktail = await api.get("cocktail")
             this.setState({cocktail: cocktail.data})
-            // console.log(cocktail)
+            console.log(cocktail)
         }
         catch(error) {
             console.error(error)
