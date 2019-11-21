@@ -1,21 +1,17 @@
 import React from 'react'
-import {api} from '../services/ThirdPartyApiConfig'
+import { api } from '../services/ThirdPartyApiConfig'
+import "./styles/Search.css"
+import border from "./images/VectorImages/border.png"
 
 class Search extends React.Component {
     constructor() {
         super()
         this.state = {
-            searchInput: ""
+            searchValue: "",
+            apiCocktails: [],
+            filteredResults: ''
         }
     }
-
-    // handleInput = () => {
-
-    // }
-
-    // handleClick = () => {
-
-    // }
 
     componentDidMount() {
         this.fetchCocktailApi()
@@ -23,22 +19,51 @@ class Search extends React.Component {
 
     fetchCocktailApi = async () => {
         try {
-            const cocktail = await api.get("cocktail")
-            this.setState({cocktail: cocktail.data})
-            console.log(cocktail)
+            const apiCocktails = await api.get("/filter.php?c=Cocktail")
+            this.setState({ apiCocktails: apiCocktails.data.drinks })
+            console.log(apiCocktails)
         }
-        catch(error) {
+        catch (error) {
             console.error(error)
         }
     }
 
+    handleInput = async (event) => {
+        const searchValue = event.target.value
+
+        this.setState({
+            searchValue,
+
+        })
+        console.log(searchValue)
+        console.log(this.state.apiCocktails)
+        const filteredResults = this.state.apiCocktails.filter(
+            (cocktail) => {
+                console.log(cocktail.strDrink)
+                return cocktail.strDrink.toLowerCase().includes(searchValue.toLowerCase())
+            })
+        console.log(filteredResults)
+        this.setState({
+            filteredResults
+        })
+    }
+
     render() {
+
         return (
             <div>
-                <div className="searchDecoDivider"></div>
+                <div className="searchDecoDivider">
+                    <img src={border} alt="art deco divider"/>
+                </div>
+
                 <h2>Search Cocktails</h2>
-                <span><input type="text" name="Search" value={this.state.value} /><button type="submit" className="searchButton">Search Icon</button></span>
-                <div className="searchCardBox"></div>
+
+                <input type="text" name="searchValue" onChange={this.handleInput} placeholder="Old Fashioned" />
+
+                <div className="searchCardBox">
+                    <img className="searchImage" src={this.state.filteredResults.strDrinkThumb} />
+                    <h3>{this.filteredResults}</h3>
+                </div>
             </div>
         )
     }
