@@ -1,0 +1,57 @@
+.overlayBox {
+    /* position: fixed; */
+    background-color: #3B3B3B;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+/* 
+.backgroundFaded {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+} */
+
+.overlayBox .close {
+    display: flex;
+    position: relative;
+    height: 15px;
+    z-index: 3;
+}
+
+button {
+    display: flex;
+    position: absolute;
+    background: none;
+    border: none;
+    height: 30px;
+    width: 35px;
+}
+
+.overlayBox img {
+    height: 300px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.overlayBox h5{
+    display: flex;
+    right: 20px;
+    font-size: 20px;
+
+}
+.overlayBox p {
+    font-family: baskerville;
+    font-size: 14px;
+    text-align: left;
+}
+
+.overlayBox h5 p {
+    margin: 0 auto;
+}

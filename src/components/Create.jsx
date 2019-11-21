@@ -21,7 +21,6 @@ class Create extends React.Component {
     handleTitleInput = (event) => {
         const value = event.target.value;
         const name = event.target.name;
-        // console.log('name', name);
 
         this.setState({ [name]: value })
     }
@@ -32,12 +31,12 @@ class Create extends React.Component {
 
         const { title, image, ingredients, directions } = this.state
         const data = {
-            title: title,
-            image: image,
-            ingredients: ingredients,
-            directions: directions
+            title,
+            image,
+            ingredients,
+            directions
         }
-        console.log(ingredients)
+        // console.log(ingredients)
         api.post("/cocktails", data)
             .then(() => {
                 this.setState({
@@ -48,8 +47,15 @@ class Create extends React.Component {
             .catch(() => this.setState({ errorMsg: "An error occured, please refresh." }))
     }
 
-    render() {
+    // onClose = () => {
+    //    return (
+    //        this.state.redirect && (<Redirect to={{pathname: "/Home"}}/>),
+    //         window.location.reload()
+    //     )
+    // }
 
+    render() {
+        
 
         return (
             <div>

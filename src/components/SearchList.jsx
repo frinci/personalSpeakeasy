@@ -6,11 +6,26 @@ class SearchList extends React.Component {
         this.state = {
 
         }
+
     }
 
     render(){
-        return 
+        return (
+            <div className="searchCardBox">
+        </div>
+        )
     }
 }
+
+// const SearchList = props => {
+//     const drink = props.filteredResults.strDrink
+//     const drinkImg = props.filteredResults.strDrinkThumb 
+//     return(
+//         <div className="searchCardBox">
+//         {drinkImg}
+//         {drink}
+//     </div>
+//     )
+// }
 
 export default SearchList

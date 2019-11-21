@@ -1,3 +1,31 @@
 .searchDecoDivider img {
     height: 110px;
 }
+
+.searchBarBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar {
+    width: 500px;
+    border: none;
+    border-radius: 2px;
+    height: 23px;
+}
+
+.searchButton {
+    position: relative;
+    height: 25px;
+    background-color: #E6B100;
+    border: none;
+    border-radius: 2px;
+    bottom: 25px;
+    left: 480px;
+}
+
+.searchButton img {
+    height: 20px;
+    padding: 2px
+}
