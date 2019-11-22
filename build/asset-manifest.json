@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.52567ac7.chunk.css",
+    "main.js": "/static/js/main.6c215a04.chunk.js",
+    "main.js.map": "/static/js/main.6c215a04.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.74454785.js",
+    "runtime-main.js.map": "/static/js/runtime-main.74454785.js.map",
+    "static/js/2.3e2651f1.chunk.js": "/static/js/2.3e2651f1.chunk.js",
+    "static/js/2.3e2651f1.chunk.js.map": "/static/js/2.3e2651f1.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f8229d233049b6404e7401ea242815db.js": "/precache-manifest.f8229d233049b6404e7401ea242815db.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.52567ac7.chunk.css.map": "/static/css/main.52567ac7.chunk.css.map",
+    "static/media/border.png": "/static/media/border.b2530156.png",
+    "static/media/createImage.jpg": "/static/media/createImage.99d884c3.jpg",
+    "static/media/favoritesImage.jpg": "/static/media/favoritesImage.a3f258f1.jpg",
+    "static/media/goldLogo.png": "/static/media/goldLogo.1e286b19.png",
+    "static/media/headerImage.jpg": "/static/media/headerImage.95c89d25.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.74454785.js",
+    "static/js/2.3e2651f1.chunk.js",
+    "static/css/main.52567ac7.chunk.css",
+    "static/js/main.6c215a04.chunk.js"
+  ]
+}
