@@ -6,8 +6,7 @@
 
 Welcome to your own personal speakeasy!
 
-Visit the site:
-personalspeakeasy.surge.sh
+[Visit the site!](personalspeakeasy.surge.sh)
 
 This basic web app allows you to search through cocktails for inspiration and create your own. It's perfect for creating shareable cocktail menus for parties or training material for restaurants.
 
