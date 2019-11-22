@@ -1,4 +1,4 @@
-# Personal Speakeasy
+# ![logo](src/components/images/VectorImages/goldLogoThumbnail.png)   Personal Speakeasy
 
 ![Personal Speakeasy Gif](src/components/images/PersonalSpeakeasy.gif)
 
