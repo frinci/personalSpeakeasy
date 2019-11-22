@@ -14,6 +14,7 @@ const Home = () => {
         <div >
             <head>
                 <link href="https://fonts.googleapis.com/css?family=Sail&display=swap" rel="stylesheet" />
+                <title>Personal Speakeasy</title>
             </head>
 
             <main>

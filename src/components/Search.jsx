@@ -51,6 +51,11 @@ class Search extends React.Component {
         this.setState({
             clicked:true
         })
+
+        if (this.state != this.state){
+            window.location.reload()
+        }
+        
     }
 
     render() {
