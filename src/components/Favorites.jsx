@@ -19,9 +19,11 @@ class Favorites extends React.Component {
     fetchCocktails = async () => {
         try {
             const cocktails = await api.get("/cocktails")
+            console.log(cocktails)
+            console.log(cocktails.data)
             
             this.setState(({ 
-                cocktails: cocktails.data[0].cocktails
+                cocktails: cocktails.data
             }))
          
         }

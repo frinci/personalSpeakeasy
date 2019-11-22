@@ -8,11 +8,11 @@
     align-content: center;
     justify-content: center;
     position: relative;
-    bottom: 300px;
+    bottom: 720px;
     left: 100px;
     height: 300px;
     width: 500px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .createTitleBox h1 {
@@ -26,6 +26,7 @@
 
 .formBox {
     background-color: #3B3B3B;
+    border-radius: 3px;
     width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -67,4 +68,104 @@
     height: 30px;
     font-size: 17px;
     margin: 15px;
+}
+
+@media(max-width: 1550px){
+    .createTitleBox {
+        bottom: 550px;
+    }
+}
+
+@media(max-width: 1350px){
+    .createTitleBox {
+        bottom: 470px
+    }
+}
+
+@media(max-width: 1050px){
+    .createTitleBox {
+        width: 400px;
+        height: 200px;
+        bottom: 350px;
+        margin-bottom: 100px;
+    }
+
+    .createTitleBox h1 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 950px){
+    .createTitleBox {
+        bottom: 260px;
+        margin-bottom: 110px;
+    }
+}
+
+@media(max-width: 850px){
+    .createTitleBox {
+        bottom: 200px;
+    }
+}
+
+@media(max-width: 750px){
+    .createTitleBox {
+        width: 320px;
+        height: 180px;
+        bottom: 20px;
+        margin-bottom: 120px;
+        margin-left: 120px;
+    }
+
+    .createDivider {
+        max-height: 90px;
+    }
+}
+
+@media(max-width: 420px){
+
+    .createTitleBox {
+        height: 100px;
+        width: 200px;
+        top: 95px;
+        margin-bottom: 200px;
+        left: 0px
+    }
+
+    .createTitleBox h1 {
+        font-size: 15px;
+        right: 5px;
+        top: 35px
+    }
+
+    .createDivider img {
+        height: 60px;
+        margin: 0 auto
+    }
+
+    .formBox {
+        width: 300px;
+        height: 400px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+        padding-top: 1px
+    }
+
+    .formInput {
+        width: 250px
+    }
+
+    .formIngredients {
+        width: 250px;
+        height: 30px;
+    }
+    
+    .formDirections {
+        width: 250px;
+        height: 50px;
+    }
+
+    .button {
+        width: 250px;
+    }
 }

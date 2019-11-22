@@ -10,7 +10,8 @@ class Search extends React.Component {
         this.state = {
             searchValue: "",
             apiCocktails: [],
-            filteredResults: ''
+            filteredResults: '',
+            clicked:false
         }
     }
 
@@ -44,26 +45,24 @@ class Search extends React.Component {
         this.setState({
             filteredResults
         })
-        
-        console.log(filteredResults)
-        return filteredResults
     }
 
-    handleClick = event => {
-        event.preventDefault()
-
-        return this.state.filteredResults && this.state.filteredResults.map((filteredResult) => (
-            <div>
-                <img src={filteredResult.strDrinkThumbnail} alt="cocktail img" />
-                <h3>{filteredResult.strDrink}</h3>
-                {console.log(filteredResult.strDrinkThumbnail, filteredResult.strDrink)}
-            </div>
-        ))
+    handleClick = () => {
+        this.setState({
+            clicked:true
+        })
     }
 
     render() {
-        // const filteredResults = this.state.filteredResults.strDrink
         console.log(this.state.filteredResults.strDrink)
+
+        
+        let cocktails = this.state.filteredResults && this.state.filteredResults.map((filteredResult) => (
+            <div className="cocktailBox">
+                <img className="cocktailImg"src={filteredResult.strDrinkThumb} alt="cocktail img" />
+                <h3>{filteredResult.strDrink}</h3>
+            </div>
+        ))
 
         return (
             <div>
@@ -80,8 +79,7 @@ class Search extends React.Component {
                 </div>
 
                 <div className="searchCardBox">
-                    {/* <img className="searchImage" src={} /> */}
-                    {/* {searchResults} */}
+                    {this.state.clicked && cocktails}
                 </div>
             </div>
         )

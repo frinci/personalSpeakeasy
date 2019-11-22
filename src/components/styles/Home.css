@@ -15,7 +15,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    height: 50px;;
+    height: 50px;
 }
 
 nav img {
@@ -59,7 +59,7 @@ li {
     margin: 15px;
 }
 
-.homeHero img{
+.heroImg{
     max-width: 100vw;
     margin-bottom: -300px;
 }
@@ -69,11 +69,11 @@ li {
     align-content: center;
     justify-content: center;
     position: relative;
-    bottom: 300px;
+    bottom: 600px;
     left: 100px;
     height: 300px;
     width: 500px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .homeTitleBox h1 {
@@ -88,4 +88,129 @@ li {
     position: relative;
     top: 50px;
     left: 130px
+}
+
+@media(max-width: 1700px){
+    .homeTitleBox {
+        bottom: 400px
+    }
+}
+
+@media(max-width: 1350px){
+    .homeTitleBox {
+        bottom: 300px
+    }
+
+    ul {
+        right: 5%
+    }
+}
+
+@media(max-width: 1050px){
+    .homeTitleBox {
+        width: 400px;
+        height: 200px;
+        bottom: 170px;
+        margin-bottom: 120px
+    }
+
+    .homeTitleBox img {
+        height: 100px;
+        left: 100px;
+    }
+
+    .homeTitleBox h1 {
+        font-size: 25px;
+        right: 50px
+    }
+}
+
+@media (max-width: 950px){
+    .homeTitleBox {
+        bottom: 100px;
+        margin-bottom: 110px;
+    }
+}
+
+@media (max-width: 850px){
+    .homeTitleBox {
+        bottom: 50px;
+    }
+}  
+
+@media (max-width: 750px){
+    .homeTitleBox {
+        width: 320px;
+        height: 180px;
+        bottom: -5px;
+        margin-bottom: 120px;
+        margin-left: 120px;
+    }
+
+    ul {
+        right: 8%
+    }
+}
+
+@media (max-width: 699px){
+    a {
+        right: 5%
+    }
+
+    .homeTitleBox {
+        margin-left: 195px;
+        left: -10px;
+        top: 30px;
+    }
+
+    .homeTitleBox img {
+        height: 100px;
+    }
+}
+
+
+@media(max-width: 420px) {
+
+    nav h3 {
+        font-size: 15px;
+        top: 6px
+    }
+
+    nav img {
+        top: 15px
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    ul {
+        right: 9%;
+        bottom: 3px
+    }
+
+    .heroImg img {
+        margin: 0 auto
+    }
+
+    .homeTitleBox {
+        height: 100px;
+        width: 200px;
+        top: 95px;
+        left: -70px;
+        margin-bottom: 200px;
+    }
+
+    .homeTitleBox h1 {
+        font-size: 15px;
+        right: 25px;
+        top: 35px
+    }
+
+    .homeTitleBox img {
+        height: 50px;
+        left: 65px;
+        top: 30px
+    }
+
 }

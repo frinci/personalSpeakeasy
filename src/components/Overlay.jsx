@@ -4,12 +4,14 @@ import closeButton from "./images/VectorImages/closeButton.png"
 
 
 const Overlay = props => {
-    const { title, image, ingredients, directions } = props.location.state;
+    const { title, image, ingredients, directions} = props.data;
     return (
         <div>
+
+           
             <div className="overlayBox">
                 
-                <button><img src={closeButton} className="close" alt="close button" /></button>
+                <button><img src={closeButton} className="close" alt="close button"  onClick={props.onClose}/></button>
 
                 <h3>{title}</h3>
                 <div className="image"></div>

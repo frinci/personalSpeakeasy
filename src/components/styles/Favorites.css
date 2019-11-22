@@ -18,12 +18,12 @@
     align-content: center;
     justify-content: center;
     position: relative;
-    bottom: 550px;
+    bottom: 850px;
     margin-bottom: -300px;
     left: 100px;
     height: 300px;
     width: 500px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .favoritesTitleBox h1 {
@@ -33,4 +33,88 @@
 
 .favoriteDivider img{
     height: 110px;
+}
+
+@media(max-width: 1350px){
+    .favoritesTitleBox {
+       bottom: 750px
+    }
+}
+
+@media(max-width: 1050px){
+    .favoritesTitleBox {
+        width: 400px;
+        height: 200px;
+        bottom: 650px;
+        margin-bottom: -200px;
+    }
+
+    .favoritesTitleBox h1 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 950px) {
+    .favoritesTitleBox {
+        bottom: 500px;
+        margin-bottom: -195px;
+    }
+}
+
+@media(max-width: 850px){
+    .favoritesTitleBox {
+        bottom: 450px;
+    }
+}
+
+@media(max-width: 750px){
+    .favoritesTitleBox {
+        width: 320px;
+        height: 180px;
+        bottom: 350px;
+        margin-bottom: -180px;
+        margin-left: 120px;
+    }
+    .favoriteDivider img {
+        max-height: 90px;
+    }
+
+    .favoritesCardBox img {
+        max-height: 180px;
+    }
+
+    .favoritesCardBox h3 {
+        font-size: 25px;
+    }
+
+}
+
+@media(max-width: 420px){
+
+    .favoritesTitleBox {
+        height: 100px;
+        width: 200px;
+        bottom: 200px;
+        left: 0;
+        margin-bottom: -100px
+    }
+
+    .favoritesTitleBox h1 {
+        font-size: 15px;
+        right: 5px;
+        top: 35px
+    }
+
+    .favoriteDivider img{
+        height: 60px;
+        margin: 0 auto
+    }
+
+    h2 {
+        margin-left: 125px
+    }
+
+    .favoriteImage {
+        max-width: 200px
+    } 
 }

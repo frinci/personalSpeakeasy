@@ -33,7 +33,7 @@ const Home = () => {
                 </header>
 
                 <div className="homeHero">
-                    <img src={headerImage} alt="bartender mixing cocktail" />
+                    <img className="heroImg"src={headerImage} alt="bartender mixing cocktail" />
 
                     <div className="homeTitleBox">
                         <img src={goldLogo} alt="golden cocktail glass logo" />
@@ -42,7 +42,7 @@ const Home = () => {
                 </div>
 
                 <Switch>
-                    <Route exact path="/Home" component={Home} />
+                    {/* <Route exact path="/Home" component={Home} /> */}
                     <Route exact path="/Search" component={Search} />
                     <Route exact path="/Create" component={Create} />
                     <Route exact path="/Favorites" component={Favorites} />

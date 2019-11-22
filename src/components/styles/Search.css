@@ -29,3 +29,62 @@
     height: 20px;
     padding: 2px
 }
+
+.cocktailBox {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.cocktailImg {
+    max-height: 200px;
+}
+
+@media (max-width: 1700px){
+    
+}
+
+@media(max-width: 750px) {
+    .searchDecoDivider img {
+        max-height: 90px;
+    }
+
+    .cocktailBox img {
+        max-height: 180px;
+    }
+
+    .cocktailBox h3 {
+        font-size: 25px;
+    }
+
+    @media (max-width: 420px){
+
+        .searchDecoDivider img{
+            height: 60px;
+            margin: 0 auto
+        }
+        .searchBarBox {
+            width: 90px;
+            margin: 0 auto;
+        }
+
+        h2 { 
+            margin-right: 110px
+        }
+
+        .searchBar {
+            width: 300px
+        }
+        .searchButton {
+            left: 295px
+        }
+
+        .cocktailImg {
+            height: 150px;
+        }
+
+        .searchCardBox {
+           margin-left: 20px
+        }
+    }
+}
