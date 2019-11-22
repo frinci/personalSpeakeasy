@@ -22,7 +22,7 @@ In order to maintain a 1920s feel, I chose to divide the sections with an art de
 
 ### Typography 
 
-The two font families used are **Sail** and **Baskerville**
+The two font families used are **Sail** and **Baskerville**.
 
 **Sail** was selected for it's playful, 1920s feel and is paired with the more formal serif **Baskerville** for text boxes and descriptions.
 
